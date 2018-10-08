@@ -52,19 +52,19 @@
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8I-Z1-Drh">
-                                <rect key="frame" x="20" y="84" width="335" height="519"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hCr-wc-eEh">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="519"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-fW-6Fc">
-                                        <rect key="frame" x="153" y="40" width="29" height="15"/>
+                                        <rect key="frame" x="173" y="20" width="29" height="15"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RcX-6r-nLs">
-                                        <rect key="frame" x="135.5" y="462" width="64" height="17"/>
+                                        <rect key="frame" x="155.5" y="522" width="64" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
@@ -75,8 +75,8 @@
                                     <constraint firstItem="RcX-6r-nLs" firstAttribute="centerX" secondItem="k8I-Z1-Drh" secondAttribute="centerX" id="Mte-BK-A68"/>
                                     <constraint firstItem="tp2-fW-6Fc" firstAttribute="centerX" secondItem="k8I-Z1-Drh" secondAttribute="centerX" id="S3X-ck-xtS"/>
                                     <constraint firstItem="hCr-wc-eEh" firstAttribute="top" secondItem="k8I-Z1-Drh" secondAttribute="top" id="Y66-gh-2F7"/>
-                                    <constraint firstItem="tp2-fW-6Fc" firstAttribute="top" secondItem="k8I-Z1-Drh" secondAttribute="top" constant="40" id="aAx-xA-o34"/>
-                                    <constraint firstAttribute="bottom" secondItem="RcX-6r-nLs" secondAttribute="bottom" constant="40" id="aDK-81-uaN"/>
+                                    <constraint firstItem="tp2-fW-6Fc" firstAttribute="top" secondItem="k8I-Z1-Drh" secondAttribute="top" constant="20" id="aAx-xA-o34"/>
+                                    <constraint firstAttribute="bottom" secondItem="RcX-6r-nLs" secondAttribute="bottom" constant="20" id="aDK-81-uaN"/>
                                     <constraint firstAttribute="trailing" secondItem="hCr-wc-eEh" secondAttribute="trailing" id="idC-25-qwI"/>
                                     <constraint firstItem="hCr-wc-eEh" firstAttribute="leading" secondItem="k8I-Z1-Drh" secondAttribute="leading" id="jRM-Ng-E8i"/>
                                     <constraint firstAttribute="bottom" secondItem="hCr-wc-eEh" secondAttribute="bottom" id="rSa-z9-paL"/>
@@ -86,14 +86,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EsD-3b-wzE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1gi-Ng-Nij"/>
-                            <constraint firstItem="EsD-3b-wzE" firstAttribute="top" secondItem="k8I-Z1-Drh" secondAttribute="bottom" constant="20" id="NaX-i6-IXx"/>
+                            <constraint firstItem="EsD-3b-wzE" firstAttribute="top" secondItem="k8I-Z1-Drh" secondAttribute="bottom" id="NaX-i6-IXx"/>
                             <constraint firstItem="EsD-3b-wzE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RO5-h7-PKS"/>
                             <constraint firstItem="HFA-IX-p79" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sfe-0y-AJ3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k8I-Z1-Drh" secondAttribute="trailing" constant="20" id="h1M-FJ-uHM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k8I-Z1-Drh" secondAttribute="trailing" id="h1M-FJ-uHM"/>
                             <constraint firstItem="EsD-3b-wzE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jcy-KW-mTv"/>
-                            <constraint firstItem="k8I-Z1-Drh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ll5-fC-mBe"/>
+                            <constraint firstItem="k8I-Z1-Drh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ll5-fC-mBe"/>
                             <constraint firstItem="HFA-IX-p79" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pGq-1R-DOU"/>
-                            <constraint firstItem="k8I-Z1-Drh" firstAttribute="top" secondItem="HFA-IX-p79" secondAttribute="bottom" constant="20" id="sCg-3K-rjS"/>
+                            <constraint firstItem="k8I-Z1-Drh" firstAttribute="top" secondItem="HFA-IX-p79" secondAttribute="bottom" id="sCg-3K-rjS"/>
                             <constraint firstItem="HFA-IX-p79" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yWN-FJ-8V6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
