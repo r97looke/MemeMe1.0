@@ -76,7 +76,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         activity.completionWithItemsHandler = {
             (activity, completed, returnedItems, activityError) in
             if completed {
-                UIImageWriteToSavedPhotosAlbum(memeImage, nil, nil, nil)
                 // For later usage
                 let memeModel = MemeModel(topText: self.topTextField.text!, bottomText: self.bottomTextField.text!, originalImage: self.pickImageView.image!, memedImage: memeImage)
             }
