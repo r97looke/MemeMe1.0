@@ -165,15 +165,10 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
 
     @objc func keyboardWillShow(_ notification: NSNotification) {
-        let keyboardHeight = getKeyboardHeight(notification);
+        // top textField will not be block by keyboard
         if let textField = getFirstResponder() {
-            let textFieldRect = textField.convert(textField.bounds, to: view)
-            let viewRect = view.bounds
-            let textFieldBottom = textFieldRect.origin.y + textFieldRect.size.height
-            let keyboardTop = viewRect.size.height - keyboardHeight
-            if textFieldBottom > keyboardTop {
-                let offset = keyboardTop - textFieldBottom - 10
-                view.frame.origin.y = offset
+            if textField.isEqual(bottomTextField) {
+                view.frame.origin.y = -getKeyboardHeight(notification)
             }
         }
     }
