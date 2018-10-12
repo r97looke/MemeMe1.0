@@ -55,18 +55,19 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         removeKeyboardObserver()
     }
 
-    @IBAction func pickAnImage(_ sender: Any) {
+    func pickOrTakeImage(sourceType: UIImagePickerController.SourceType) {
         let imagePicker = UIImagePickerController();
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = sourceType
         present(imagePicker, animated: true, completion: nil)
     }
 
+    @IBAction func pickAnImage(_ sender: Any) {
+        pickOrTakeImage(sourceType: .photoLibrary)
+    }
+
     @IBAction func takeAnPicture(_ sender: Any) {
-        let imagePicker = UIImagePickerController();
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        present(imagePicker, animated: true, completion: nil)
+        pickOrTakeImage(sourceType: .camera)
     }
 
     @IBAction func shareMeme(_ sender: Any) {
