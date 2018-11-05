@@ -52,33 +52,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tq9-NN-yuY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tq9-NN-yuY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MemeTableCell" textLabel="qlO-Q8-Qnu" detailTextLabel="wup-MO-W7S" style="IBUITableViewCellStyleValue1" id="18c-7a-UDh">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MemeTableCell" rowHeight="90" id="18c-7a-UDh" customClass="MemeTableCell" customModule="MeMe1_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="18c-7a-UDh" id="Mxh-hj-xAN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qlO-Q8-Qnu">
-                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="egP-8K-CCf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="160" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="M8Z-cI-E5X"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYd-hj-ozR">
+                                                    <rect key="frame" x="168" y="34.5" width="88" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wup-MO-W7S">
-                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imm-HD-xsi">
+                                                    <rect key="frame" x="264" y="34.5" width="88" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CYd-hj-ozR" firstAttribute="leading" secondItem="egP-8K-CCf" secondAttribute="trailing" constant="8" id="5aP-6q-8MB"/>
+                                                <constraint firstItem="imm-HD-xsi" firstAttribute="centerY" secondItem="Mxh-hj-xAN" secondAttribute="centerY" id="B2b-Dq-GLb"/>
+                                                <constraint firstAttribute="bottom" secondItem="egP-8K-CCf" secondAttribute="bottom" id="Iew-cf-zYF"/>
+                                                <constraint firstItem="egP-8K-CCf" firstAttribute="leading" secondItem="Mxh-hj-xAN" secondAttribute="leading" id="UBV-bc-sDg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="imm-HD-xsi" secondAttribute="trailing" constant="8" id="UpV-j4-R3m"/>
+                                                <constraint firstItem="egP-8K-CCf" firstAttribute="top" secondItem="Mxh-hj-xAN" secondAttribute="top" id="eVE-IO-3WL"/>
+                                                <constraint firstItem="imm-HD-xsi" firstAttribute="leading" secondItem="CYd-hj-ozR" secondAttribute="trailing" constant="8" id="g7q-0f-Zwn"/>
+                                                <constraint firstItem="CYd-hj-ozR" firstAttribute="centerY" secondItem="Mxh-hj-xAN" secondAttribute="centerY" id="gFf-MN-9Kg"/>
+                                                <constraint firstItem="imm-HD-xsi" firstAttribute="width" secondItem="CYd-hj-ozR" secondAttribute="width" id="j1X-Zl-tRZ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bottomTextLabel" destination="imm-HD-xsi" id="Q8S-ZQ-kud"/>
+                                            <outlet property="memeImageView" destination="egP-8K-CCf" id="m2n-x3-Icu"/>
+                                            <outlet property="topTextLabel" destination="CYd-hj-ozR" id="3qp-tT-RcC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -342,6 +362,6 @@
         <image name="table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oaw-np-Cbv"/>
+        <segue reference="6zI-KM-EHG"/>
     </inferredMetricsTieBreakers>
 </document>

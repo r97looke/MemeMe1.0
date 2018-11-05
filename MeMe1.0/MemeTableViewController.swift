@@ -15,7 +15,7 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.rowHeight = 90
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -35,11 +35,11 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableCell", for: indexPath) as! MemeTableCell
         let meme = memes[indexPath.row]
-        cell.imageView?.image = meme.memedImage
-        cell.textLabel?.text = meme.topText
-        cell.detailTextLabel?.text = meme.bottomText
+        cell.memeImageView.image = meme.memedImage
+        cell.topTextLabel.text = meme.topText
+        cell.bottomTextLabel.text = meme.bottomText
         return cell
     }
 
