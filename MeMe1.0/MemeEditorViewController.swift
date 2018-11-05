@@ -78,6 +78,9 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             if completed {
                 // For later usage
                 let memeModel = MemeModel(topText: self.topTextField.text!, bottomText: self.bottomTextField.text!, originalImage: self.pickImageView.image!, memedImage: memeImage)
+                if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                    appDelegate.memes.append(memeModel)
+                }
             }
         }
 
