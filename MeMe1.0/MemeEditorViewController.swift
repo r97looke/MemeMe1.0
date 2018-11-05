@@ -89,6 +89,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
 
     @IBAction func cancelMeme(_ sender: Any) {
         defaultUI()
+        dismiss(animated: true, completion: nil)
     }
 
     func generateMemeImage() -> UIImage {
