@@ -144,6 +144,35 @@
             </objects>
             <point key="canvasLocation" x="147" y="93"/>
         </scene>
+        <!--Meme Detail View Controller-->
+        <scene sceneID="GB3-ay-vId">
+            <objects>
+                <viewController storyboardIdentifier="MemeDetail" id="fH3-6O-HJh" customClass="MemeDetailViewController" customModule="MeMe1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Llf-Ec-zky">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-E7-TrU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fTc-E7-TrU" firstAttribute="bottom" secondItem="EBc-a0-5Jl" secondAttribute="bottom" id="6jE-m9-CWF"/>
+                            <constraint firstItem="fTc-E7-TrU" firstAttribute="leading" secondItem="EBc-a0-5Jl" secondAttribute="leading" id="R4X-5f-nzu"/>
+                            <constraint firstItem="fTc-E7-TrU" firstAttribute="trailing" secondItem="EBc-a0-5Jl" secondAttribute="trailing" id="WDD-aC-rGa"/>
+                            <constraint firstItem="fTc-E7-TrU" firstAttribute="top" secondItem="Llf-Ec-zky" secondAttribute="top" id="ySj-xc-Imf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EBc-a0-5Jl"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fTc-E7-TrU" id="JvW-ke-Ex9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oak-9N-XzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213.5999999999999" y="89.505247376311857"/>
+        </scene>
         <!--Meme Editor View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
